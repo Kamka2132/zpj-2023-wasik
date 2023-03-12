@@ -41,6 +41,7 @@ public class IntSequence {
         return napis.toString();
     }
 
+    // ZAD 5
     public static IntSequence constant(int liczba){
         while(true){
             System.out.println(liczba);
