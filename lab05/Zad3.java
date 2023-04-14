@@ -15,7 +15,7 @@ public class Zad3 {
 
         // Wczytanie tekstu z pliku
         StringBuilder sb = new StringBuilder();
-        try (BufferedReader br = new BufferedReader(new FileReader("C:/Users/Lap/zpj-2023-wasik/lab05/war_and_peace.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("war_and_peace.txt"))) {
             String linia;
             while ((linia = br.readLine()) != null) {
                 sb.append(linia).append(" ");
