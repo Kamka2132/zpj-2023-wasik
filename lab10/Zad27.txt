@@ -1,0 +1,9 @@
+W wyrażeniu regularnym "\\b((\\d{3})(\\d{3})(\\d{4}))|((\\d{3})(\\d{4}))\\b";, 
+występują 2 grupy, są one oznaczone przez (). Pierwsza ma 3 podgrupy, a druga 2.
+1. ((\d{3})(\d{3})(\d{4}))
+    I   (\d{3})
+    II  (\d{3})
+    III (\d{4})
+2. ((\d{3})(\d{4}))
+    I   (\d{3})
+    II  (\d{4})
