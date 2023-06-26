@@ -1,4 +1,4 @@
-package lab10;
+package egzamin.regex;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

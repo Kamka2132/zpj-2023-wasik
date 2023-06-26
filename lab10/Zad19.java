@@ -28,4 +28,5 @@ public class Zad19 {
         Matcher matcher = pattern.matcher(miasto);
         return matcher.find();
     }
+
 }
