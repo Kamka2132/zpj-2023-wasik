@@ -1,26 +1,19 @@
 package egzamin.regex;
 
+import java.util.*;
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 
 public class testowe {
     public static void main(String[] args) {
-        LocalDate dzisiaj = LocalDate.now();
-        System.out.println("dzisiaj: " + dzisiaj);
+        LocalTime start = LocalTime.of(6, 30);
+        LocalTime koniec = LocalTime.of(15, 45);
 
-        LocalDate kamila = LocalDate.of(2002, 12, 26);
-        // kamila = LocalDate.of(2002, Month.DECEMBER, 26);
-        System.out.println("Moje urodziny: " + kamila);
+        Duration trwanie = Duration.between(start, koniec);
 
-        LocalDate walentynki = LocalDate.of(2023, 1, 1).plusDays(44);
-        System.out.println("walentynki: " + walentynki);
+        long godziny = trwanie.toHours();
+        long minuty = trwanie.toMinutes() % 60;
 
-        LocalDate swieta = LocalDate.of(2023, Month.DECEMBER, 24);
-        System.out.println("Do swiat: " + walentynki.until(swieta, ChronoUnit.DAYS));
-
-        DayOfWeek mojeuro = LocalDate.of(2002, 12, 26).getDayOfWeek();
-        System.out.println("mojeuro w 2002 roku:" + mojeuro);
-
+        System.out.println("Godz: " + godziny + "min: " + minuty);
     }
-
 }
